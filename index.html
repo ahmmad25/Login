@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/main.css">
+</head>
+
+<body>
+    <div class="container py-5 my-5 shadow-lg">
+        <h1 class="text-white">Smart Login System</h1>
+        <form id="loginForm">
+            <label for="username"></label>
+            <input type="text" id="username" name="username" required placeholder="Enter Your Email">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" required placeholder="Enter Your Password">
+            <button type="submit">Login</button>
+            <a href="#" id="Don’t have an account? Sign Up" class="text-center text-white text-decoration-none">Don’t have an account? Sign Up</a>
+        </form>
+    </div>
+
+    <div id="passwordResetModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Password Reset</h2>
+            <form id="passwordResetForm">
+                <label for="resetUsername">Username:</label>
+                <input type="text" id="resetUsername" name="resetUsername" required>
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Reset Password</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
